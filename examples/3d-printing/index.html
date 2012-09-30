@@ -50,6 +50,52 @@
 <script type="text/javascript" src="../../lib/svgmocker.js"></script>
 <script type="text/javascript">
 
+    function formatLinks (svg) {
+
+        function createText (text) {
+            var textNode = document.createElementNS(svgmocker.svgns, "tspan");
+            textNode.appendChild(document.createTextNode(text));
+            return textNode;
+        }
+
+        function createLink (text, href) {
+            var linkNode = document.createElementNS(svgmocker.svgns, "a");
+            linkNode.setAttributeNS(svgmocker.xlinkns, "href", href);
+            linkNode.appendChild(document.createTextNode(text));
+            return linkNode;
+        }
+
+        function formatLink () {
+            for (var i = 0; i < this.childNodes.length; i++) {
+                var node = this.childNodes[i];
+                if (node.childNodes.length === 0) {
+                    var text = node.textContent;
+                    console.log("Processing link " + text);
+                    var match = /\[(.*)\] <(.*)>/.exec(text);
+                    if (match) {
+                        var start = text.indexOf(match[0]);
+                        var textBefore = text.substr(0, start);
+                        var textAfter = text.substr(start + match[0].length);
+                        var linkText = match[1];
+                        var linkHref = match[2];
+                        if (textBefore) {
+                            node.parentNode.insertBefore(createText(textBefore), node);
+                        }
+                        if (linkText) {
+                            node.parentNode.insertBefore(createLink(linkText, linkHref), node);
+                        }
+                        if (textAfter) {
+                            node.parentNode.insertBefore(createText(textAfter), node);
+                        }
+                        node.parentNode.removeChild(node);
+                    }
+                }
+            }
+        }
+
+        d3.select(svg).selectAll("text, tspan, span").each(formatLink);
+    }
+
     var SlideManager = function (options) {
         options = options || {};
 
@@ -130,6 +176,7 @@
 
         d3.xml("3dprinting.svg", "image/svg+xml", function (xml) {
             var svg = document.importNode(xml.documentElement, true);
+            formatLinks(svg);
             svgLoaded(svg);
         });
 

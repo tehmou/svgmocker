@@ -26,8 +26,8 @@
 </g>
 <g id="slide:duplicating">
 	<text transform="matrix(1 0 0 1 5782.5859 406.5771)" font-family="'TulpenOne-Regular'" font-size="200">Duplicating Objects</text>
-	<rect x="5805" y="477" fill="none" width="895" height="500.5"/>
-	<text transform="matrix(1 0 0 1 5805 505.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— 3d scan + 3d print works like a traditional copy </tspan><tspan x="50" y="60" font-family="'HelveticaNeue-UltraLight'" font-size="40">machine</tspan><tspan x="0" y="135" font-family="'HelveticaNeue-UltraLight'" font-size="40">— cannot copy the internal structure, only the outer </tspan><tspan x="50" y="195" font-family="'HelveticaNeue-UltraLight'" font-size="40">shape</tspan><tspan x="0" y="270" font-family="'HelveticaNeue-UltraLight'" font-size="40">— scuptures, keys, body parts (prosthesis), </tspan><tspan x="50" y="330" font-family="'HelveticaNeue-UltraLight'" font-size="40">[Warhammer figures] </tspan><tspan x="50" y="390" font-family="'HelveticaNeue-UltraLight'" font-size="40">&lt;http://www.wired.co.uk/news/archive/2012-05/31</tspan><tspan x="50" y="450" font-family="'HelveticaNeue-UltraLight'" font-size="40">/3d-printing-copyright&gt;</tspan></text>
+	<rect x="5805" y="477" fill="none" width="895" height="604"/>
+	<text transform="matrix(1 0 0 1 5805 505.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— 3d scan + 3d print works like a traditional copy </tspan><tspan x="50" y="60" font-family="'HelveticaNeue-UltraLight'" font-size="40">machine</tspan><tspan x="0" y="135" font-family="'HelveticaNeue-UltraLight'" font-size="40">— cannot copy the internal structure, only the outer </tspan><tspan x="50" y="195" font-family="'HelveticaNeue-UltraLight'" font-size="40">shape</tspan><tspan x="0" y="270" font-family="'HelveticaNeue-UltraLight'" font-size="40">— scuptures, keys, body parts (prosthesis), </tspan><tspan x="50" y="330" font-family="'HelveticaNeue-UltraLight'" font-size="40">[Warhammer figures] </tspan><tspan x="50" y="390" font-family="'HelveticaNeue-UltraLight'" font-size="40">&lt;http://www.wired.co.uk/news/archive/2012-05/31</tspan><tspan x="50" y="450" font-family="'HelveticaNeue-UltraLight'" font-size="40">/3d-printing-copyright&gt;</tspan><tspan x="0" y="525" font-family="'HelveticaNeue-UltraLight'" font-size="40">— machine replicators will take over the world</tspan></text>
 	<rect id="shape_4_" x="5725.5" y="209.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
 </g>
 <g id="slide:downloading">
@@ -55,7 +55,7 @@
 <g id="slide:modeling">
 	<text transform="matrix(1 0 0 1 7110.5859 1540.5771)" font-family="'TulpenOne-Regular'" font-size="200">Modeling</text>
 	<rect x="7133" y="1611" fill="none" width="895" height="500.5"/>
-	<text transform="matrix(1 0 0 1 7133 1639.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— any 3D CAD can be used</tspan><tspan x="0" y="75" font-family="'HelveticaNeue-UltraLight'" font-size="40">— engineering: AutoDesk, SolidWorks</tspan><tspan x="0" y="150" font-family="'HelveticaNeue-UltraLight'" font-size="40">— design: Rhino3D, 3ds Max, Maya</tspan><tspan x="0" y="225" font-family="'HelveticaNeue-UltraLight'" font-size="40">— free: Blender, Google SketchUp</tspan><tspan x="0" y="300" font-family="'HelveticaNeue-UltraLight'" font-size="40">— it’s actually pretty hard</tspan><tspan x="0" y="375" font-family="'HelveticaNeue-UltraLight'" font-size="40">— demo</tspan></text>
+	<text transform="matrix(1 0 0 1 7133 1639.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— any 3D CAD can be used</tspan><tspan x="0" y="75" font-family="'HelveticaNeue-UltraLight'" font-size="40">— engineering: AutoDesk, SolidWorks</tspan><tspan x="0" y="150" font-family="'HelveticaNeue-UltraLight'" font-size="40">— design: Rhino3D, 3ds Max, Maya</tspan><tspan x="0" y="225" font-family="'HelveticaNeue-UltraLight'" font-size="40">— free: Blender, Google SketchUp</tspan><tspan x="0" y="300" font-family="'HelveticaNeue-UltraLight'" font-size="40">— it’s actually pretty hard</tspan><tspan x="0" y="375" font-family="'HelveticaNeue-UltraLight'" font-size="40">t— demo</tspan></text>
 	<rect id="shape_6_" x="7053.5" y="1343.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
 </g>
 <g id="slide:materials">
@@ -100,4 +100,5 @@
 <rect x="2232" y="1497" fill="none" width="20" height="0"/>
 <text transform="matrix(1 0 0 1 2138.2324 3897)" font-family="'HelveticaNeue-UltraLight'" font-size="48">v</text>
 <rect x="-978.063" y="1113.217" fill="none" width="5.999" height="0"/>
+<rect x="-798.1" y="1533.133" fill="none" width="11.998" height="11.997"/>
 </svg>
