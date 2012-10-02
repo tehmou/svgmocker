@@ -61,6 +61,7 @@
         function createLink (text, href) {
             var linkNode = document.createElementNS(svgmocker.svgns, "a");
             linkNode.setAttributeNS(svgmocker.xlinkns, "href", href);
+            linkNode.setAttribute("stroke", "blue");
             linkNode.appendChild(document.createTextNode(text));
             return linkNode;
         }
