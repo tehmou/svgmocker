@@ -50,7 +50,7 @@
 <script type="text/javascript" src="../../lib/svgmocker.js"></script>
 <script type="text/javascript">
 
-    function formatLinks (svg) {
+    function formatLinks (svg, configuration) {
 
         function createText (text) {
             var textNode = document.createElementNS(svgmocker.svgns, "tspan");
@@ -61,6 +61,7 @@
         function createLink (text, href) {
             var linkNode = document.createElementNS(svgmocker.svgns, "a");
             linkNode.setAttributeNS(svgmocker.xlinkns, "href", href);
+            linkNode.setAttribute("stroke", "blue");
             linkNode.appendChild(document.createTextNode(text));
             return linkNode;
         }
@@ -69,31 +70,75 @@
             for (var i = 0; i < this.childNodes.length; i++) {
                 var node = this.childNodes[i];
                 if (node.childNodes.length === 0) {
-                    var text = node.textContent;
-                    console.log("Processing link " + text);
-                    var match = /\[(.*)\] <(.*)>/.exec(text);
-                    if (match) {
+                    var text;
+                    var match;
+                    console.log("line");
+                    console.log(node.textContent);
+                    while(node && (text = node.textContent) && (match = /\[([\w\d\s^\]]*)\]/.exec(text))) {
                         var start = text.indexOf(match[0]);
                         var textBefore = text.substr(0, start);
                         var textAfter = text.substr(start + match[0].length);
                         var linkText = match[1];
-                        var linkHref = match[2];
-                        if (textBefore) {
-                            node.parentNode.insertBefore(createText(textBefore), node);
+                        var linkHref = configuration.links[linkText];
+                        console.log("Processing link " + linkText);
+                        if (linkHref) {
+                            if (textBefore) {
+                                node.parentNode.insertBefore(createText(textBefore), node);
+                            } else {
+                                textBefore = undefined;
+                            }
+                            if (linkText) {
+                                node.parentNode.insertBefore(createLink(linkText, linkHref), node);
+                            } else {
+                                linkText = undefined;
+                            }
+                            if (textAfter) {
+                                var textAfterNode = createText(textAfter);
+                                node.parentNode.insertBefore(textAfterNode, node);
+                            } else {
+                                textAfterNode = undefined;
+                            }
+                            node.parentNode.removeChild(node);
+                            node = textAfterNode;
+                        } else {
+                            console.warn("'" + linkText + "' looks like a link, but no match found in configuration");
                         }
-                        if (linkText) {
-                            node.parentNode.insertBefore(createLink(linkText, linkHref), node);
-                        }
-                        if (textAfter) {
-                            node.parentNode.insertBefore(createText(textAfter), node);
-                        }
-                        node.parentNode.removeChild(node);
                     }
                 }
             }
         }
 
         d3.select(svg).selectAll("text, tspan, span").each(formatLink);
+    }
+
+    function readConfiguration (svg) {
+        console.log("Reading configuration");
+        var configuration = {
+            links: {}
+        };
+        d3.select(svg).selectAll("#configuration text").each(function () {
+            if (/^link/.exec(this.id)) {
+                var value = this.firstChild.nodeValue;
+                var match = /\[(.*)\]: ?(.*)/.exec(value);
+                if (match) {
+                    var linkKey = match[1];
+                    var linkValue = match[2];
+                    if (configuration.links[linkKey]) {
+                        console.error("Double definition for link");
+                        console.error(value);
+                    } else {
+                        configuration.links[linkKey] = linkValue;
+                        console.log("Found link");
+                    }
+                } else {
+                    console.error("Link was not correctly formatted.");
+                }
+            }
+        });
+        Object.freeze(configuration);
+        console.log("Created configuration");
+        console.log(configuration);
+        return configuration;
     }
 
     var SlideManager = function (options) {
@@ -176,7 +221,8 @@
 
         d3.xml("3dprinting.svg", "image/svg+xml", function (xml) {
             var svg = document.importNode(xml.documentElement, true);
-            formatLinks(svg);
+            var configuration = readConfiguration(svg);
+            formatLinks(svg, configuration);
             svgLoaded(svg);
         });
 
