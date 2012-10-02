@@ -2,7 +2,7 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title></title>
+    <title>3D Printing Presentation Demo</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no" />
@@ -72,15 +72,15 @@
                 if (node.childNodes.length === 0) {
                     var text;
                     var match;
-                    console.log("line");
-                    console.log(node.textContent);
+                    svgmocker.log("line");
+                    svgmocker.log(node.textContent);
                     while(node && (text = node.textContent) && (match = /\[([\w\d\s^\]]*)\]/.exec(text))) {
                         var start = text.indexOf(match[0]);
                         var textBefore = text.substr(0, start);
                         var textAfter = text.substr(start + match[0].length);
                         var linkText = match[1];
                         var linkHref = configuration.links[linkText];
-                        console.log("Processing link " + linkText);
+                        svgmocker.log("Processing link " + linkText);
                         if (linkHref) {
                             if (textBefore) {
                                 node.parentNode.insertBefore(createText(textBefore), node);
@@ -101,7 +101,7 @@
                             node.parentNode.removeChild(node);
                             node = textAfterNode;
                         } else {
-                            console.warn("'" + linkText + "' looks like a link, but no match found in configuration");
+                            svgmocker.log("'" + linkText + "' looks like a link, but no match found in configuration");
                         }
                     }
                 }
@@ -112,7 +112,7 @@
     }
 
     function readConfiguration (svg) {
-        console.log("Reading configuration");
+        svgmocker.log("Reading configuration");
         var configuration = {
             links: {}
         };
@@ -124,20 +124,20 @@
                     var linkKey = match[1];
                     var linkValue = match[2];
                     if (configuration.links[linkKey]) {
-                        console.error("Double definition for link");
-                        console.error(value);
+                        svgmocker.error("Double definition for link");
+                        svgmocker.error(value);
                     } else {
                         configuration.links[linkKey] = linkValue;
-                        console.log("Found link");
+                        svgmocker.log("Found link");
                     }
                 } else {
-                    console.error("Link was not correctly formatted.");
+                    svgmocker.error("Link was not correctly formatted.");
                 }
             }
         });
         Object.freeze(configuration);
-        console.log("Created configuration");
-        console.log(configuration);
+        svgmocker.log("Created configuration");
+        svgmocker.log(configuration);
         return configuration;
     }
 
