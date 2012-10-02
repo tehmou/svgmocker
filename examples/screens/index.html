@@ -31,14 +31,10 @@
     (function () {
 
         function svgLoaded(svg) {
-            var screens = svgmocker.findAndCreateSlides(svg);
-            document.appendChild(screens.home);
+            document.body.appendChild(svg);
         }
 
-        d3.xml("screens.svg", "image/svg+xml", function (xml) {
-            var svg = document.importNode(xml.documentElement, true);
-            svgLoaded(svg);
-        });
+        svgmocker.loadSVG("screens.svg", svgLoaded);
 
     })();
 
