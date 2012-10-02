@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="3169px" height="2233px" viewBox="0 0 3169 2233" enable-background="new 0 0 3169 2233" xml:space="preserve">
+<g id="home">
+	<rect id="shape" x="95.5" y="143.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="554"/>
+	<text transform="matrix(1 0 0 1 399.7402 456.3604)" font-family="'HelveticaNeue-Bold'" font-size="70">SVG Mocker</text>
+	<text transform="matrix(1 0 0 1 552.0127 357)" font-family="'HelveticaNeue-UltraLightItalic'" font-size="24">welcome to</text>
+	<text transform="matrix(1 0 0 1 519.7949 577)" font-family="'HelveticaNeue'" font-size="24">click to continue</text>
+	<rect id="clickarea" x="95" y="144" opacity="0" width="1024" height="554"/>
+</g>
+</svg>
