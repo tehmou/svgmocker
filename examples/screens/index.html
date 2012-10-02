@@ -57,29 +57,62 @@
                 actions.push({
                     key: match[1],
                     value: match[2],
-                    node: node
+                    el: node
                 });
             }
             return actions;
         }
 
-        function applyActions (actions) {
+        function applyActions (actions, app) {
             actions.forEach(function (action) {
-
+                if (action.key === "link") {
+                    action.el.addEventListener("click", function () {
+                        app.showScreen(action.value);
+                    });
+                }
             });
         }
 
+        function createApp (options) {
+            options = options || {};
+            var svg = options.svg;
+            var el = options.el;
+
+            var screens;
+
+            function initialize () {
+                svgmocker.log("Extracting screens");
+                screens = extractScreens(svg);
+                svgmocker.log("Appending start screen");
+            }
+            function showScreen (id) {
+                el.innerHTML = "";
+                el.appendChild(screens[id].el);
+            }
+
+            return {
+                initialize: initialize,
+                showScreen: showScreen
+            };
+        }
+
         function svgLoaded(svg) {
-            var startingId = svgmocker.cleanUpId(svg.querySelector("svg > g").id);
+            var startingScreenId = svgmocker.cleanUpId(svg.querySelector("svg > g").id);
+
+            svgmocker.log("Creating the app");
+            var app = createApp({
+                svg: svg,
+                el: document.body.querySelector("#app")
+            });
 
             svgmocker.log("Collecting actions");
             var actions = collectActions(svg);
 
-            svgmocker.log("Extracting screens");
-            var screens = extractScreens(svg);
+            svgmocker.log("Applying actions");
+            applyActions(actions, app);
 
-            svgmocker.log("Appending start screen");
-            document.body.appendChild(screens[startingId].el);
+            app.initialize();
+            app.showScreen(startingScreenId);
         }
 
         svgmocker.loadSVG("screens.svg", svgLoaded);
