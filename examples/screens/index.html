@@ -30,18 +30,56 @@
 
     (function () {
 
-        function svgLoaded(svg) {
+        var forEach = Array.prototype.forEach;
+
+        function extractScreens (svg) {
             var screens = {};
             var highLevelGroups = svg.querySelectorAll("svg > g");
-            var startingId = svgmocker.cleanUpId(highLevelGroups[0].id);
-            Array.prototype.forEach.call(highLevelGroups, function (g) {
+            forEach.call(highLevelGroups, function (g) {
                 var id = svgmocker.cleanUpId(g.id);
                 if (screens[id]) {
                     console.warn("Found duplicate screen with id=" + id);
                 }
                 screens[id] = svgmocker.extractSlide(g);
             });
-            document.body.appendChild(screens[startingId]   .el);
+            return screens;
+        }
+
+        function collectActions (node) {
+            var actions = [];
+            forEach.call(node.childNodes, function (childNode) {
+                actions = actions.concat(collectActions(childNode));
+            });
+            var id = svgmocker.cleanUpId(node.id);
+            var match = /^([^:]*):(.*)/.exec(id);
+            if (match) {
+                console.log("Found action " + id);
+                actions.push({
+                    key: match[1],
+                    value: match[2],
+                    node: node
+                });
+            }
+            return actions;
+        }
+
+        function applyActions (actions) {
+            actions.forEach(function (action) {
+
+            });
+        }
+
+        function svgLoaded(svg) {
+            var startingId = svgmocker.cleanUpId(svg.querySelector("svg > g").id);
+
+            console.log("Collecting actions");
+            var actions = collectActions(svg);
+
+            console.log("Extracting screens");
+            var screens = extractScreens(svg);
+
+            console.log("Appending start screen");
+            document.body.appendChild(screens[startingId].el);
         }
 
         svgmocker.loadSVG("screens.svg", svgLoaded);
