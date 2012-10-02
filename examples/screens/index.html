@@ -38,7 +38,7 @@
             forEach.call(highLevelGroups, function (g) {
                 var id = svgmocker.cleanUpId(g.id);
                 if (screens[id]) {
-                    console.warn("Found duplicate screen with id=" + id);
+                    svgmocker.log("Found duplicate screen with id=" + id);
                 }
                 screens[id] = svgmocker.extractSlide(g);
             });
@@ -53,7 +53,7 @@
             var id = svgmocker.cleanUpId(node.id);
             var match = /^([^:]*):(.*)/.exec(id);
             if (match) {
-                console.log("Found action " + id);
+                svgmocker.log("Found action " + id);
                 actions.push({
                     key: match[1],
                     value: match[2],
@@ -72,13 +72,13 @@
         function svgLoaded(svg) {
             var startingId = svgmocker.cleanUpId(svg.querySelector("svg > g").id);
 
-            console.log("Collecting actions");
+            svgmocker.log("Collecting actions");
             var actions = collectActions(svg);
 
-            console.log("Extracting screens");
+            svgmocker.log("Extracting screens");
             var screens = extractScreens(svg);
 
-            console.log("Appending start screen");
+            svgmocker.log("Appending start screen");
             document.body.appendChild(screens[startingId].el);
         }
 
