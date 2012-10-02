@@ -31,7 +31,12 @@
     (function () {
 
         function svgLoaded(svg) {
-            document.body.appendChild(svg);
+            var screens = {};
+            var highLevelGroups = svg.querySelectorAll("svg > g");
+            Array.prototype.forEach.call(highLevelGroups, function (g) {
+                screens[g.id] = svgmocker.extractSlide(g);
+            });
+            document.body.appendChild(screens.home.el);
         }
 
         svgmocker.loadSVG("screens.svg", svgLoaded);
