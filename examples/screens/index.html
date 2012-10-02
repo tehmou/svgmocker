@@ -33,10 +33,15 @@
         function svgLoaded(svg) {
             var screens = {};
             var highLevelGroups = svg.querySelectorAll("svg > g");
+            var startingId = svgmocker.cleanUpId(highLevelGroups[0].id);
             Array.prototype.forEach.call(highLevelGroups, function (g) {
-                screens[g.id] = svgmocker.extractSlide(g);
+                var id = svgmocker.cleanUpId(g.id);
+                if (screens[id]) {
+                    console.warn("Found duplicate screen with id=" + id);
+                }
+                screens[id] = svgmocker.extractSlide(g);
             });
-            document.body.appendChild(screens.home.el);
+            document.body.appendChild(screens[startingId]   .el);
         }
 
         svgmocker.loadSVG("screens.svg", svgLoaded);
