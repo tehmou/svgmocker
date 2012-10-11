@@ -27,10 +27,26 @@
 </head>
 <body>
 
-<h1>Drag your SVG anywhere to render</h1>
+<script type="text/javascript">
+
+    function download() {
+        var a = document.createElement("a");
+        a.href = 'data:Application/octet-stream,' + encodeURIComponent(droppedFile);
+        a.download = "youFile.svg";
+        a.click();
+    }
+
+</script>
+
+<div id="svgContent">
+    <h1>Drag your SVG anywhere to render</h1>
+</div>
+<a href="javascript:download()">Download your presentation</a>
 
 <script type="text/javascript" src="../../lib/svgmocker.js"></script>
 <script type="text/javascript">
+
+    var droppedFile;
 
     document.body.addEventListener("drop", function (e) {
         e.preventDefault();
@@ -42,10 +58,12 @@
         var reader = new FileReader();
         reader.onload = function (event) {
             var text = reader.result;
+            droppedFile = text;
             var doc = new DOMParser().parseFromString(text, "application/xml");
             var svg = document.importNode(doc.documentElement, true);
-            document.body.innerHTML = "";
-            document.body.appendChild(svg);
+            var el = document.body.querySelector("#svgContent");
+            el.innerHTML = "";
+            el.appendChild(svg);
         };
         reader.readAsText(file);
     });
