@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="8284.5px" height="5753px" viewBox="0 0 8284.5 5753" enable-background="new 0 0 8284.5 5753" xml:space="preserve">
+<g id="slide:3d_printing">
+	<text transform="matrix(1 0 0 1 558.1777 646.5771)" font-family="'TulpenOne-Regular'" font-size="200">3D Printing</text>
+	<text transform="matrix(1 0 0 1 756.8838 812)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="72">Also known as</tspan><tspan x="-57.307" y="86.4" font-family="'HelveticaNeue-UltraLight'" font-size="72">rapid prototyping</tspan></text>
+	<rect id="shape" x="279.5" y="209.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:basics">
+	<text transform="matrix(1 0 0 1 1662.5859 406.5771)" font-family="'TulpenOne-Regular'" font-size="200">Basics</text>
+	<rect x="1685" y="477" fill="none" width="895" height="500.5"/>
+	<text transform="matrix(1 0 0 1 1685 505.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">—like a picture can be divided into dots on paper, an </tspan><tspan x="50" y="48" font-family="'HelveticaNeue-UltraLight'" font-size="40">object can be composed of little cubes</tspan><tspan x="0" y="111" font-family="'HelveticaNeue-UltraLight'" font-size="40">— think of lego blocks</tspan><tspan x="0" y="174" font-family="'HelveticaNeue-UltraLight'" font-size="40">— [video from cubify]</tspan></text>
+	<rect id="shape_1_" x="1605.5" y="209.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:usage">
+	<text transform="matrix(1 0 0 1 3454.0762 646.5771)" font-family="'TulpenOne-Regular'" font-size="200">Usage</text>
+	<rect id="shape_2_" x="3061.5" y="209.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:manufacturing">
+	<text transform="matrix(1 0 0 1 4486.5859 406.5771)" font-family="'TulpenOne-Regular'" font-size="200">Why (not)?</text>
+	<rect x="4509" y="477" fill="none" width="895" height="500.5"/>
+	<text transform="matrix(1 0 0 1 4509 505.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">+ possible to create virtually any shape, so few </tspan><tspan x="37" y="60" font-family="'HelveticaNeue-UltraLight'" font-size="40">restrictions in the design</tspan><tspan x="0" y="120" font-family="'HelveticaNeue-UltraLight'" font-size="40">+ zero starting expenses</tspan><tspan x="0" y="180" font-family="'HelveticaNeue-UltraLight'" font-size="40">+ reasonable production costs</tspan><tspan x="0" y="300" font-family="'HelveticaNeue-UltraLight'" font-size="40">– surface quality / tolerances</tspan><tspan x="0" y="360" font-family="'HelveticaNeue-UltraLight'" font-size="40">– shrinkage for some materials</tspan></text>
+	<rect id="shape_3_" x="4429.5" y="209.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:duplicating">
+	<text transform="matrix(1 0 0 1 5782.5859 406.5771)" font-family="'TulpenOne-Regular'" font-size="200">Duplicating Objects</text>
+	<rect x="5805" y="477" fill="none" width="895" height="604"/>
+	<text transform="matrix(1 0 0 1 5805 505.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— 3d scan + 3d print works like a traditional copy </tspan><tspan x="50" y="60" font-family="'HelveticaNeue-UltraLight'" font-size="40">machine</tspan><tspan x="0" y="135" font-family="'HelveticaNeue-UltraLight'" font-size="40">— cannot copy the internal structure, only the outer </tspan><tspan x="50" y="195" font-family="'HelveticaNeue-UltraLight'" font-size="40">shape</tspan><tspan x="0" y="270" font-family="'HelveticaNeue-UltraLight'" font-size="40">— scuptures, keys, body parts (prosthesis), </tspan><tspan x="50" y="330" font-family="'HelveticaNeue-UltraLight'" font-size="40">[Warhammer figures]</tspan><tspan x="0" y="405" font-family="'HelveticaNeue-UltraLight'" font-size="40">— machine replicators will take over the world</tspan></text>
+	<rect id="shape_4_" x="5725.5" y="209.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:downloading">
+	<text transform="matrix(1 0 0 1 7110.5859 406.5771)" font-family="'TulpenOne-Regular'" font-size="200">Downloading</text>
+	<rect x="7133" y="477" fill="none" width="895" height="660"/>
+	<text transform="matrix(1 0 0 1 7133 505.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— [Thingiverse]</tspan><tspan x="0" y="75" font-family="'HelveticaNeue-UltraLight'" font-size="40">— [WikiWeapon] aims to create a printable gun</tspan><tspan x="0" y="150" font-family="'HelveticaNeue-UltraLight'" font-size="40">— interesting legal problems</tspan><tspan x="0" y="225" font-family="'HelveticaNeue-UltraLight'" font-size="40">— copyright for physical objects is under debate, unless </tspan><tspan x="50" y="285" font-family="'HelveticaNeue-UltraLight'" font-size="40">“art”</tspan></text>
+	<rect id="shape_5_" x="7053.5" y="209.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:techniques">
+	<text transform="matrix(1 0 0 1 3304.125 1780.5771)" font-family="'TulpenOne-Regular'" font-size="200">How It Works</text>
+	<rect id="shape_9_" x="3061.5" y="1343.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:extrusion">
+	<text transform="matrix(1 0 0 1 4486.5859 1540.5771)" font-family="'TulpenOne-Regular'" font-size="200">Extrusion</text>
+	<rect x="4509" y="1611" fill="none" width="895" height="458"/>
+	<text transform="matrix(1 0 0 1 4509 1639.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— Cubify cube works like this</tspan><tspan x="0" y="75" font-family="'HelveticaNeue-UltraLight'" font-size="40">— the print “grows” into air</tspan><tspan x="0" y="150" font-family="'HelveticaNeue-UltraLight'" font-size="40">— needs supporting structures for “hanging” parts of </tspan><tspan x="50" y="210" font-family="'HelveticaNeue-UltraLight'" font-size="40">the desing</tspan></text>
+	<rect id="shape_8_" x="4429.5" y="1343.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:binding">
+	<text transform="matrix(1 0 0 1 5782.5859 1540.5771)" font-family="'TulpenOne-Regular'" font-size="200">Binding</text>
+	<rect x="5805" y="1611" fill="none" width="895" height="500.5"/>
+	<text transform="matrix(1 0 0 1 5805 1639.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— a layer of dust is added and then selectivelly melted</tspan><tspan x="0" y="75" font-family="'HelveticaNeue-UltraLight'" font-size="40">— the print is moved tiny bit down, and a new layer of </tspan><tspan x="50" y="135" font-family="'HelveticaNeue-UltraLight'" font-size="40">dust is again added</tspan><tspan x="0" y="210" font-family="'HelveticaNeue-UltraLight'" font-size="40">— the print will form inside of the dust, the dust </tspan><tspan x="50" y="270" font-family="'HelveticaNeue-UltraLight'" font-size="40">supporting it</tspan><tspan x="0" y="345" font-family="'HelveticaNeue-UltraLight'" font-size="40">— laser can be used to melt the medium</tspan></text>
+	<rect id="shape_7_" x="5725.5" y="1343.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:modeling">
+	<text transform="matrix(1 0 0 1 7110.5859 1540.5771)" font-family="'TulpenOne-Regular'" font-size="200">Modeling</text>
+	<rect x="7133" y="1611" fill="none" width="895" height="500.5"/>
+	<text transform="matrix(1 0 0 1 7133 1639.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— any 3D CAD can be used</tspan><tspan x="0" y="75" font-family="'HelveticaNeue-UltraLight'" font-size="40">— engineering: AutoDesk, SolidWorks</tspan><tspan x="0" y="150" font-family="'HelveticaNeue-UltraLight'" font-size="40">— design: Rhino3D, 3ds Max, Maya</tspan><tspan x="0" y="225" font-family="'HelveticaNeue-UltraLight'" font-size="40">— free: Blender, Google SketchUp</tspan><tspan x="0" y="300" font-family="'HelveticaNeue-UltraLight'" font-size="40">— it’s actually pretty hard</tspan><tspan x="0" y="375" font-family="'HelveticaNeue-UltraLight'" font-size="40">— demo</tspan></text>
+	<rect id="shape_6_" x="7053.5" y="1343.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:materials">
+	<text transform="matrix(1 0 0 1 3394.7012 2929.5771)" font-family="'TulpenOne-Regular'" font-size="200">Materials</text>
+	<rect id="shape_12_" x="3061.5" y="2492.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:currently_available">
+	<text transform="matrix(1 0 0 1 4486.5859 2689.5771)" font-family="'TulpenOne-Regular'" font-size="200">Currently Available</text>
+	<rect x="4509" y="2760" fill="none" width="895" height="409"/>
+	<text transform="matrix(1 0 0 1 4509 2788.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— all kinds of (colored) plastics and rubber</tspan><tspan x="0" y="75" font-family="'HelveticaNeue-UltraLight'" font-size="40">— ceramics, opaque glass</tspan><tspan x="0" y="150" font-family="'HelveticaNeue-UltraLight'" font-size="40">— steel, aluminide</tspan><tspan x="0" y="225" font-family="'HelveticaNeue-UltraLight'" font-size="40">— all castable metals through lost wax casting</tspan><tspan x="0" y="300" font-family="'HelveticaNeue-UltraLight'" font-size="40">— samples</tspan></text>
+	<rect id="shape_11_" x="4429.5" y="2492.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:not_yet_available">
+	<text transform="matrix(1 0 0 1 5797.5859 2689.5771)" font-family="'TulpenOne-Regular'" font-size="200">Not Yet Available</text>
+	<rect x="5820" y="2760" fill="none" width="895" height="409"/>
+	<text transform="matrix(1 0 0 1 5820 2788.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— electric circuits</tspan><tspan x="0" y="75" font-family="'HelveticaNeue-UltraLight'" font-size="40">— organic tissue</tspan><tspan x="0" y="150" font-family="'HelveticaNeue-UltraLight'" font-size="40">— cakes</tspan></text>
+	<rect id="shape_10_" x="5740.5" y="2492.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:where_to_buy">
+	<text transform="matrix(1 0 0 1 3317.0156 4066.5771)" font-family="'TulpenOne-Regular'" font-size="200">Where to Get</text>
+	<rect id="shape_16_" x="3061.5" y="3629.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:printing_shops">
+	<text transform="matrix(1 0 0 1 4486.5859 3826.5771)" font-family="'TulpenOne-Regular'" font-size="200">Printing Shops</text>
+	<rect x="4509" y="3897" fill="none" width="895" height="500.5"/>
+	<text transform="matrix(1 0 0 1 4509 3925.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— [Shapeways], [Sculpteo], [Kraftwurx]</tspan><tspan x="0" y="75" font-family="'HelveticaNeue-UltraLight'" font-size="40">— focus on consumer services</tspan><tspan x="0" y="150" font-family="'HelveticaNeue-UltraLight'" font-size="40">— not stellar quality, but cheap prices</tspan><tspan x="0" y="225" font-family="'HelveticaNeue-UltraLight'" font-size="40">— small plastic objects are a few euros + postage, </tspan><tspan x="50" y="285" font-family="'HelveticaNeue-UltraLight'" font-size="40">metals a bit more and ceramics a lot more</tspan></text>
+	<rect id="shape_15_" x="4429.5" y="3629.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="shape:diy">
+	<text transform="matrix(1 0 0 1 5782.5859 3826.5771)" font-family="'TulpenOne-Regular'" font-size="200">At Home</text>
+	<rect x="5805" y="3897" fill="none" width="895" height="500.5"/>
+	<text transform="matrix(1 0 0 1 5805 3925.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— [MakerBot] from $1600</tspan><tspan x="0" y="75" font-family="'HelveticaNeue-UltraLight'" font-size="40">— [Cubify] from $1300</tspan><tspan x="0" y="150" font-family="'HelveticaNeue-UltraLight'" font-size="40">— [Solidoodle] from $500</tspan><tspan x="0" y="225" font-family="'HelveticaNeue-UltraLight'" font-size="40">— with some skill it is possible to build something very </tspan><tspan x="50" y="285" font-family="'HelveticaNeue-UltraLight'" font-size="40">cheap</tspan><tspan x="0" y="360" font-family="'HelveticaNeue-UltraLight'" font-size="40">— only plastic is reasonable at home</tspan></text>
+	<rect id="shape_14_" x="5725.5" y="3629.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="slide:about">
+	<text transform="matrix(1 0 0 1 3117.5859 4834.5771)" font-family="'TulpenOne-Regular'" font-size="200">About</text>
+	<rect x="3140" y="4905" fill="none" width="895" height="500.5"/>
+	<text transform="matrix(1 0 0 1 3140 4933.5596)"><tspan x="0" y="0" font-family="'HelveticaNeue-UltraLight'" font-size="40">— @tehmou</tspan><tspan x="0" y="60" font-family="'HelveticaNeue-UltraLight'" font-size="40">— started with spaceships, ended up doing jewelry </tspan><tspan x="50" y="120" font-family="'HelveticaNeue-UltraLight'" font-size="40">design</tspan><tspan x="0" y="180" font-family="'HelveticaNeue-UltraLight'" font-size="40">— freelance graphics designer and software developer</tspan></text>
+	<rect id="shape_17_" x="3060.5" y="4637.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="1024" height="768"/>
+</g>
+<g id="configuration">
+	<text id="link" transform="matrix(1 0 0 1 202.4551 4737.5)" font-family="'MyriadPro-Regular'" font-size="60">[Warhammer figures]: http://www.wired.co.uk/news/archive/2012-05/31/3d-printing-copyright</text>
+	<text id="link_2_" transform="matrix(1 0 0 1 202.4551 4857.5)" font-family="'HelveticaNeue-UltraLight'" font-size="40">[Thingiverse]: http://www.thingiverse.com/</text>
+	<text id="link_3_" transform="matrix(1 0 0 1 202.4551 4957.5)" font-family="'HelveticaNeue-UltraLight'" font-size="40">[WikiWeapon]: http://www.forbes.com/sites/andygreenberg/2012/08/23/wiki-weapon-project-aims-to-create-a-gun-anyone-can-3d-print-at-home/</text>
+	<text id="link_4_" transform="matrix(1 0 0 1 202.4551 5059.5)" font-family="'HelveticaNeue-UltraLight'" font-size="40">[Shapeways]: http://shapeways.com/</text>
+	<text id="link_5_" transform="matrix(1 0 0 1 202.4551 5167.5)" font-family="'HelveticaNeue-UltraLight'" font-size="40">[Sculpteo]: http://www.sculpteo.com/</text>
+	<text id="link_6_" transform="matrix(1 0 0 1 202.4551 5271.5)" font-family="'HelveticaNeue-UltraLight'" font-size="40">[Kraftwurx]: http://www.kraftwurx.com/</text>
+	<text id="link_8_" transform="matrix(1 0 0 1 202.4551 5375.5)" font-family="'HelveticaNeue-UltraLight'" font-size="40">[MakerBot]: http://www.makerbot.com/</text>
+	<text id="link_7_" transform="matrix(1 0 0 1 202.4551 5479.5)" font-family="'HelveticaNeue-UltraLight'" font-size="40">[Cubify]: http://cubify.com/</text>
+	<text id="link_10_" transform="matrix(1 0 0 1 202.4551 5579)" font-family="'HelveticaNeue-UltraLight'" font-size="40">[Solidoodle]: http://www.solidoodle.com/</text>
+	<text id="link_1_" transform="matrix(1 0 0 1 202.4551 4637.5)" font-family="'MyriadPro-Regular'" font-size="60">[video from cubify]: http://www.youtube.com/watch?v=iB5i5SA6rKQ&amp;feature=related</text>
+</g>
+<text id="notes" transform="matrix(1 0 0 1 697 1589)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="200">basics</tspan><tspan x="0" y="86.4" font-family="'HelveticaNeue'" font-size="72">- concept drawing</tspan><tspan x="0" y="326.4" font-family="'HelveticaNeue'" font-size="200">usage</tspan><tspan x="0" y="412.8" font-family="'HelveticaNeue'" font-size="72">- creative manufacturing</tspan><tspan x="0" y="499.2" font-family="'HelveticaNeue'" font-size="72">- duplicate object (scan)</tspan><tspan x="0" y="585.6" font-family="'HelveticaNeue'" font-size="72">- download specs</tspan><tspan x="0" y="825.6" font-family="'HelveticaNeue'" font-size="200">how it works</tspan><tspan x="0" y="912" font-family="'HelveticaNeue'" font-size="72">- 3d glass “sculptures” (laser sintering)</tspan><tspan x="0" y="998.4" font-family="'HelveticaNeue'" font-size="72">- extrustion</tspan><tspan x="0" y="1084.8" font-family="'HelveticaNeue'" font-size="72">- granular material binding</tspan><tspan x="0" y="1171.2" font-family="'HelveticaNeue'" font-size="72">- photopolymerization</tspan><tspan x="0" y="1411.2" font-family="'HelveticaNeue'" font-size="200">materials</tspan><tspan x="0" y="1497.6" font-family="'HelveticaNeue'" font-size="72">- overview</tspan><tspan x="0" y="1584" font-family="'HelveticaNeue'" font-size="72">- lost wax casting</tspan><tspan x="0" y="1824" font-family="'HelveticaNeue'" font-size="200">consumer places</tspan><tspan x="0" y="1910.4" font-family="'HelveticaNeue'" font-size="72">- sculpteo</tspan><tspan x="0" y="1996.8" font-family="'HelveticaNeue'" font-size="72">- shapeways</tspan><tspan x="0" y="2236.801" font-family="'HelveticaNeue'" font-size="200">future</tspan><tspan x="0" y="2476.801" font-family="'HelveticaNeue'" font-size="200">samples</tspan></text>
+</svg>
