@@ -7,8 +7,9 @@ define(["text!../img/3dprinting.svg"], function (svg) {
             pages.start.pageController.loadSvg(svg);
         };
 
-        pages.start.addEventListener("svgloaded", function () {
-            pager.showPage("home");
+        pages.start.addEventListener("svgloaded", function (e) {
+            var data = e.detail;
+            pager.showPage("home", data);
         });
 
         pager.showPage("start");

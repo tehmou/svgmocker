@@ -13,14 +13,14 @@ define([], function () {
             return pageEl;
         }
 
-        function showPage (id) {
+        function showPage (id, data) {
             if (currentPage) {
                 el.removeChild(currentPage);
                 currentPage.pageController.hide();
                 currentPage = undefined;
             }
             currentPage = pages[id];
-            currentPage.pageController.show();
+            currentPage.pageController.show(data);
             el.appendChild(currentPage);
         }
 

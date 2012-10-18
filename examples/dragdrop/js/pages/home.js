@@ -1,30 +1,40 @@
 define(["text!./home.html"], function (template) {
 
+    function createSvg (svgText) {
+        var doc = new DOMParser().parseFromString(svgText, "application/xml");
+        return document.importNode(doc.documentElement, true);
+    }
+
+    function downloadSvg (svgText) {
+        var a = document.createElement("a");
+        a.href = 'data:Application/octet-stream,' + encodeURIComponent(svgText);
+        a.download = "yourFile.svg";
+        a.click();
+    }
+
     return function (el) {
-        function downloadSvg () {
-            var a = document.createElement("a");
-            a.href = 'data:Application/octet-stream,' + encodeURIComponent(window.droppedFile);
-            a.download = "youFile.svg";
-            a.click();
+        var svgText;
+
+        function onDownloadSvg () {
+            downloadSvg(svgText);
         }
-        function viewSvg (svgText) {
-            var doc = new DOMParser().parseFromString(svgText, "application/xml");
-            var svg = document.importNode(doc.documentElement, true);
+        function onViewSvg () {
+            var svg = createSvg(svgText);
             var svgEl = el.querySelector("#svgContent");
             svgEl.innerHTML = "";
             svgEl.appendChild(svg);
         }
-        function show () {
+        function show (data) {
+            svgText = data;
             el.innerHTML = template;
-            el.querySelector("#viewSvg").onclick = function () { viewSvg(window.droppedFile); };
-            el.querySelector("#downloadSvg").onclick = downloadSvg;
+            el.querySelector("#viewSvg").onclick = onViewSvg;
+            el.querySelector("#downloadSvg").onclick = onDownloadSvg;
         }
         function hide () {
 
         }
 
         return {
-            el: el,
             show: show,
             hide: hide
         };

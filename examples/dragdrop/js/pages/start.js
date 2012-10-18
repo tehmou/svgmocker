@@ -2,8 +2,7 @@ define(["../utils", "text!./start.html"], function (utils, template) {
 
     return function (el) {
         function loadSvg (data) {
-            window.droppedFile = data;
-            utils.dispatchCustomEvent(el, "svgloaded", false, true);
+            utils.dispatchCustomEvent(el, "svgloaded", false, true, data);
         }
         function onDrop (e) {
             e.preventDefault();
@@ -18,7 +17,7 @@ define(["../utils", "text!./start.html"], function (utils, template) {
             };
             reader.readAsText(file);
         }
-        function show () {
+        function show (data) {
             el.innerHTML = template;
             el.addEventListener("drop", onDrop);
         }
@@ -27,7 +26,6 @@ define(["../utils", "text!./start.html"], function (utils, template) {
         }
 
         return {
-            el: el,
             loadSvg: loadSvg,
             show: show,
             hide: hide
