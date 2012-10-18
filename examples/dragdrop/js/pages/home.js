@@ -14,19 +14,19 @@ define(["text!./home.html"], function (template) {
             svgEl.innerHTML = "";
             svgEl.appendChild(svg);
         }
-        function create () {
+        function show () {
             el.innerHTML = template;
             el.querySelector("#viewSvg").onclick = function () { viewSvg(window.droppedFile); };
             el.querySelector("#downloadSvg").onclick = downloadSvg;
         }
-        function destroy () {
+        function hide () {
 
         }
 
         return {
             el: el,
-            create: create,
-            destroy: destroy
+            show: show,
+            hide: hide
         };
     };
 });
