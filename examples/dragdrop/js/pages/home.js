@@ -1,4 +1,4 @@
-define(["text!./home.html"], function (template) {
+define(["text!./home.html", "../views/svgSlideView"], function (template, svgSlideView) {
 
     function createSvg (svgText) {
         var doc = new DOMParser().parseFromString(svgText, "application/xml");
@@ -29,6 +29,10 @@ define(["text!./home.html"], function (template) {
             el.innerHTML = template;
             el.querySelector("#viewSvg").onclick = onViewSvg;
             el.querySelector("#downloadSvg").onclick = onDownloadSvg;
+
+            var svg = createSvg(data);
+            var slides = svgmocker.findAndCreateSlides(svg);
+            svgSlideView(el.querySelector("#svgSlideView")).show(slides);
         }
         function hide () {
 
