@@ -9,20 +9,20 @@ require(["./js/pages", "text!./img/3dprinting.svg"], function (pages, sampleSvg)
 
         function showPage (id) {
             if (currentPage) {
-                el.removeChild(currentPage.el);
-                currentPage.el.removeEventListener("pageChange", onPageChange);
-                currentPage.destroy();
+                el.removeChild(currentPage);
+                currentPage.removeEventListener("pageChange", onPageChange);
+                currentPage.pageController.destroy();
                 currentPage = undefined;
             }
-            var pageEl = document.createElement("div");
-            pageEl.addEventListener("pagechange", onPageChange);
-            currentPage = pages[id](pageEl, pageController);
-            currentPage.create();
-            el.appendChild(pageEl);
+            currentPage = document.createElement("div");
+            currentPage.addEventListener("pagechange", onPageChange);
+            currentPage.pageController = pages[id](currentPage, pageController);
+            currentPage.pageController.create();
+            el.appendChild(currentPage);
         }
 
         document.body.querySelector("#useSampleSvg").onclick = function () {
-            currentPage.setData(sampleSvg);
+            currentPage.pageController.setData(sampleSvg);
         };
 
         return {
